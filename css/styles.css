@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --color-background: #33315B;
+  --color-text: white;
+  --color-background-light: #413D70;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-color: var(--color-alice-blue);
+  overflow-x: hidden;
+  background-color: var(--color-background);
+  color: white;
+  text-align: center;
+}
+
+.h1 {
+  font-size: clamp(3.8rem, 6vw, 6.8rem);
+}
+
+.h2 {
+  font-size: clamp(1.8rem, 1.9vw, 2.8rem);
+  font-weight: 300;
+}
+
+.p1, .trash {
+  font-size: clamp(1.5rem, 1.2vw, 2.4rem);
+  font-weight: 400;
+}
+
+.title {
+  padding: min(3rem, 2vw) 1vw;
+}
+
+input[type=text] {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: min(1.2vw, 1.5rem);
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.5rem, 1.2vw, 2.4rem);
+  font-weight: 400;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+.search {
+  width: max(25rem, 42vw);
+  margin: 0 auto min(3.5vw, 2.8rem) auto;
+}
+
+.todos {
+  width: max(25rem, 42vw);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.todo {
+  width: 100%;
+  background-color: var(--color-background-light);
+  padding: min(1.2vw, 1.5rem) min(1.8vw, 2.1rem);
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trash:hover {
+  cursor: pointer;
+}
+
+.adder {
+  display: flex;
+  flex-direction: column;
+  width: max(25rem, 42vw);
+  margin: min(3vw, 2.5rem) auto;
+}
+.adder__bar {
+  margin-top: 0.8rem;
+}
+
+.filtered {
+  display: none;
+}
